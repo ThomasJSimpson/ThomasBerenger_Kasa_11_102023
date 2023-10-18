@@ -28,20 +28,3 @@ export default function About() {
     </>
   );
 }
-
-// function BackgroundImage() {
-//   const location = useLocation();
-//   const pathname = location.pathname;
-//   const parts = pathname.split("/");
-//   const fileName = parts[parts.length - 1];
-
-//   console.log("Nom du fichier : " + fileName);
-
-//   return (
-//     <div className="backgroundImage">
-//       <img src={backgroundImage} alt="{mountain}-vue" />
-//       <div className="overlay"></div>
-//       {/* {  ? <p>Chez vous, partout et ailleurs</p>: null} */}
-//     </div>
-//   );
-// }

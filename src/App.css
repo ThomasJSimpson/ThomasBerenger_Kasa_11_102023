@@ -59,8 +59,6 @@ main {
   flex-direction: column;
   align-items: center;
   margin-top: 6.3rem;
-  /* margin-left: auto;
-  margin-right: auto; */
   max-width: 144rem;
   min-width: 37.5rem;
   padding-left: 6.94%;
@@ -109,7 +107,7 @@ main {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.overlay-items {
+.overlay-cards {
   border-radius: 10px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
@@ -130,7 +128,7 @@ main {
   justify-content: space-between;
 }
 
-.item {
+.card {
   position: relative;
   max-width: 34rem;
   height: 34rem;
@@ -138,13 +136,13 @@ main {
   overflow: hidden;
 }
 
-.item img {
+.card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.item p {
+.card p {
   position: absolute;
   font-size: 1.8rem;
   line-height: 2.5rem;
@@ -463,7 +461,7 @@ span.tag {
     column-gap: 4rem;
   }
 
-  .item {
+  .card {
     position: relative;
     width: 100%;
     max-width: 50rem;
@@ -500,7 +498,7 @@ span.tag {
     grid-template-columns: auto;
   }
 
-  .item {
+  .card {
     position: relative;
     max-width: 100%;
     min-width: 34rem;
@@ -640,12 +638,12 @@ span.tag {
     gap: 2rem;
   }
 
-  .item {
+  .card {
     min-width: 33.5rem;
     height: 25.5rem;
   }
 
-  .item p {
+  .card p {
     top: 18.8rem;
     left: 2rem;
     width: 25rem;

@@ -16,7 +16,7 @@ export default function Gallery({ pictures }) {
 
   return (
     <div className="gallery">
-      <img className="gallery-img" src={`${pictures[indexPicture]}`} alt={`todefined`} />
+      <img className="gallery-img" src={`${pictures[indexPicture]}`} alt={`gallery-pic-${indexPicture + 1}`} />
 
       {pictures.length > 1 && (
         <>
