@@ -4,7 +4,7 @@ import Header from "./components/Header.jsx";
 import Homepage from "./pages/HomePage.jsx";
 import Location from "./pages/Location.jsx";
 import About from "./pages/About.jsx";
-import PageNonFound from "./pages/PageNonFound.jsx";
+import PageNotFound from "./pages/PageNotFound.jsx";
 import "./App.css";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="location/:id" element={<Location />} />
-        <Route path="*" element={<PageNonFound />} />
+        <Route path="*" element={<PageNotFound />} />
         <Route path="about" element={<About />} />
       </Routes>
     </BrowserRouter>
