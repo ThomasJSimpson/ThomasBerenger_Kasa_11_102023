@@ -1,7 +1,5 @@
-import { useLocation } from "react-router-dom";
-
 function getData(setState, id) {
-  fetch("../logements.json")
+  fetch("/logements.json")
     .then((response) => response.json())
     .then((data) => {
       let itemData = data;
@@ -15,10 +13,4 @@ function getData(setState, id) {
     });
 }
 
-function GetPath() {
-  const location = useLocation();
-  const pathname = location.pathname;
-  return pathname;
-}
-
-export { getData, GetPath };
+export { getData };

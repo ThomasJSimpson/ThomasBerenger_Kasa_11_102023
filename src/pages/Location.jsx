@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import { getData } from "../utils/Functions.jsx";
 import Gallery from "../components/Gallery.jsx";
 import LocationInfo from "../components/LocationInfo.jsx";
@@ -9,14 +9,13 @@ import Footer from "../components/Footer.jsx";
 export default function Location() {
   const [itemData, setItemData] = useState(null);
   const { id } = useParams();
-  const navigate = useNavigate();
 
   useEffect(() => {
     getData(setItemData, id);
   }, [setItemData, id]);
 
   if (itemData === undefined) {
-    navigate("*");
+    return <Navigate to="*" />;
   }
 
   return (
