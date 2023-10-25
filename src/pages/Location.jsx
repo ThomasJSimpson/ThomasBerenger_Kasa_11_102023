@@ -17,20 +17,20 @@ export default function Location() {
   if (itemData === undefined) {
     return <Navigate to="*" />;
   }
-
-  return (
-    itemData && (
+  if (itemData) {
+    const { pictures, host, title, location, tags, rating, description, equipments } = itemData;
+    return (
       <>
         <main className="fade-in">
-          <Gallery pictures={itemData.pictures} />
-          <LocationInfo host={itemData.host} title={itemData.title} location={itemData.location} tags={itemData.tags} rating={itemData.rating} />
+          <Gallery pictures={pictures} />
+          <LocationInfo host={host} title={title} location={location} tags={tags} rating={rating} />
           <div className="descriptions">
-            <Collapse description={itemData.description} />
-            <Collapse equipments={itemData.equipments} />
+            <Collapse description={description} />
+            <Collapse equipments={equipments} />
           </div>
         </main>
         <Footer />
       </>
-    )
-  );
+    );
+  }
 }

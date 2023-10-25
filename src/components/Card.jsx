@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Card({ card }) {
   const { id, cover, title } = card;
+
   return (
     <Link to={`/location/${id}`}>
       <li className="card" key={id}>
